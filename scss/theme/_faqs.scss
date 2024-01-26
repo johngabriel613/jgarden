@@ -1,0 +1,33 @@
+.faqs{
+  display: grid;
+  gap: 1rem;
+
+  .faqs-item{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+    summary, p{
+      padding: 20px;
+    }
+
+    summary{
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      color: #121212;
+    }
+
+    p{
+      border-top: 1px solid gray;
+      color: gray;
+      font-size: 14px;
+    }
+
+    &[open] summary img{
+      transform: rotate(180deg);
+    }
+  }
+}
+

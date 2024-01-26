@@ -1,0 +1,46 @@
+//--------- start footer Area -------------//
+.footer-area {
+	padding: 20px;
+	background: $title-color;
+
+	.footer-bottom {
+		
+		p {
+			color: $white;
+
+			a{
+				color: $primary-color;
+			}
+		}
+		// span {
+		// 	font-weight: 700;
+		// }
+		.footer-social {
+			text-align: center;
+			@media (max-width: 991px) {
+				text-align: left;
+				margin-top: 30px;
+			}
+			a {
+				background: rgba(255, 255, 255, 0.15);
+				margin-left: 3px;
+				width: 32px;
+				color: $white;
+				display: inline-grid;
+				text-align: center;
+				height: 32px;
+				align-content: center;
+				// @include transition();
+				&:hover {
+					// @extend .gradient-bg;
+					background: $primary-color;
+				}
+
+				i,span{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+//--------- end footer Area -------------//

@@ -1,0 +1,15 @@
+.about{
+  position: relative;
+  background: white;
+  z-index: 1;
+  max-width: 997px;
+  padding: 50px 20px;
+  
+  
+  @media screen and (min-width:997px) {
+    top: -100px;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0 0 50px 0 rgb(0, 0, 0, 0.2);
+  }
+}
