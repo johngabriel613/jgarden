@@ -2231,12 +2231,58 @@ button {
   }
 }
 
+.card .card-image {
+  height: 300px;
+  aspect-ratio: 1;
+}
+.card .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-title {
+  display: flex;
+  gap: 0.3rem;
+}
+.card .card-title .badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #fff;
+  background: #10B981;
+  align-self: flex-start;
+}
+.card .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  background: rgba(204, 167, 114, 0.8);
+  transition: all 500ms ease-in;
+  text-align: center;
+}
+.card .overlay h3 {
+  color: #fff;
+}
+.card .overlay p {
+  color: #fff;
+}
+.card:hover .overlay {
+  top: 100%;
+}
+
 .faqs {
   display: grid;
   gap: 1rem;
 }
 .faqs .faqs-item {
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .faqs .faqs-item summary, .faqs .faqs-item p {
@@ -2251,8 +2297,8 @@ button {
   color: #121212;
 }
 .faqs .faqs-item p {
-  border-top: 1px solid gray;
-  color: gray;
+  border-top: 1px solid #808080;
+  color: #505050;
   font-size: 14px;
 }
 .faqs .faqs-item[open] summary img {

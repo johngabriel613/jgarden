@@ -61,3 +61,55 @@
     }
   }
 }
+
+.card{
+  .card-image{
+    height: 300px;
+    aspect-ratio: 1;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .card-title{
+    display: flex;
+    gap: .3rem;
+
+    .badge{
+      font-size: .75rem;
+      font-weight: 500;
+      color: #fff;
+      background: #10B981;
+      align-self: flex-start;
+    }
+  }
+
+  .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background: rgb(204, 167, 114, 0.8);
+    transition: all 500ms ease-in;
+    text-align: center;
+
+
+    h3{
+      color: #fff;
+    }
+    p{
+      color: #fff;
+    }
+  }
+
+  &:hover .overlay{
+    top: 100%;
+  }
+}
+

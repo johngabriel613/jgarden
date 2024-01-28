@@ -56,6 +56,73 @@ $(function() {
         }
       })
 
+      $('.facilities-carousel').owlCarousel({
+        loop:true,
+        autoplay: true,
+        margin:0,
+        smartSpeed: 600,
+        nav:false,
+        dots: true,
+        responsive:{
+          0:{
+            items:1
+          },
+          528:{
+            items:2
+          },
+          768:{
+            items: 3
+          },
+          1440:{
+            items: 4
+          }
+        }
+      })
+      $('.room-carousel').owlCarousel({
+        loop:true,
+        autoplay: true,
+        margin:0,
+        smartSpeed: 600,
+        nav:false,
+        dots: false,
+        responsive:{
+          0:{
+            items:1
+          },
+          528:{
+            items:2
+          },
+          768:{
+            items: 3
+          },
+          1440:{
+            items: 4
+          }
+        }
+      })
+      $('.room-carousel-reversed').owlCarousel({
+        loop:true,
+        autoplay: true,
+        margin:0,
+        smartSpeed: 1000,
+        nav:false,
+        dots: false,
+        responsive:{
+          0:{
+            items:1
+          },
+          528:{
+            items:2
+          },
+          768:{
+            items: 3
+          },
+          1440:{
+            items: 4
+          }
+        }
+      })
+
       const gallery = document.querySelectorAll('.gallery__item');
 
       gallery.forEach(item => {
